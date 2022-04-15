@@ -1,0 +1,72 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.left-block {
+  flex: 0 0 400px;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-shadow: -4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: -4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: -4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.login-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 150px;
+}
+
+.login-block input {
+  width: 300px;
+  height: 30px;
+  padding: 0 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.66)
+}
+
+.login-block input:focus {
+  border: 1px solid $primary-light;
+}
+
+.email, .pass {
+  position: relative;
+}
+
+.submit-button {
+  align-self: flex-end;
+  width: 150px;
+  height: 30px;
+  background-color: $primary-light;
+  color: $white;
+  &:hover{
+    background-color: #093684FF;
+  }
+}
+
+.message {
+  position: absolute;
+  bottom: -15px;
+  color: $error;
+  font-size: 12px;
+}
+
+.error {
+  color: $error;
+}
+
+.warning {
+  color: $warning;
+}

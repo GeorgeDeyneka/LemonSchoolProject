@@ -1,0 +1,10 @@
+@import '_reset.scss';
+@import '_variables.scss';
+@import '_login.scss';
+@import '_contacts.scss';
+@import '_header.scss';
+
+.container {
+  max-width: 1360px;
+  margin: 50px auto;
+}
