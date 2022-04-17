@@ -40,28 +40,28 @@ const getContactWithID = (req, res) => {
 }
 
 const updateContact = (req, res) => {
-    // Contact.findOneAndUpdate({_id: req.params.contactID},
-    //     req.body, {new: true, useFindAndModify: false},
-    //     (err, contact) => {
-    //         if (err) {
-    //             res.send(err);
-    //         }
-    //         res.json(contact)
-    //     })
+    Contact.findOneAndUpdate({_id: req.params.contactID},
+        req.body, {new: true, useFindAndModify: false},
+        (err, contact) => {
+            if (err) {
+                res.send(err);
+            }
+            res.json(contact)
+        })
 }
 const deleteContact = (req, res) => {
     const content = fs.readFileSync(__dirname + filePathToContacts, "utf8");
     const contacts = JSON.parse(content);
     contacts.filter((item) => item.id !== req.query.id)
     res.send('contact has been deleted');
-    // data = JSON.stringify(users);
-    // fs.writeFileSync("users.json", data);
-    // Contact.remove({_id: req.params.contactID}, (err, contact) => {
-    //     if (err) {
-    //         res.send(err);
-    //     }
-    //     res.json({message:'successfuly deleted contact'})
-    // })
+    data = JSON.stringify(users);
+    fs.writeFileSync("users.json", data);
+    Contact.remove({_id: req.params.contactID}, (err, contact) => {
+        if (err) {
+            res.send(err);
+        }
+        res.json({message:'successfuly deleted contact'})
+    })
 }
 
 module.exports = {

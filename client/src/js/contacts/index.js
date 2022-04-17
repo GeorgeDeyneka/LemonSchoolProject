@@ -76,7 +76,7 @@ function clickHandler(e) {
     if(e.target.classList.contains('action-group__delete')){
             deleteContact(parentBlock,id)
      }else if(e.target.classList.contains('action-group__edit')){
-        console.log('edit')
+        console.log('in progress... (function "updateContact" is not connected)')
     }
 }
 

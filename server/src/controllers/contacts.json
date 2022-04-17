@@ -18,4 +18,24 @@
     "lastName": "Travolta",
     "email":"johntravolta@gmail.com",
     "phone": "0667809090"
-  }]
+  },
+  {
+    "id":4,
+    "firstName":"Johny",
+    "lastName": "Depp",
+    "email":"johnydepp@gmail.com",
+    "phone": "0669000909"
+  },
+  {    "id":5,
+    "firstName":"Leonardo",
+    "lastName": "Di Caprio",
+    "email":"leo@gmail.com",
+    "phone": "0668000000"
+  },
+  {    "id":6,
+    "firstName":"Elon",
+    "lastName": "Musk",
+    "email":"elona@gmail.com",
+    "phone": "88005553535"
+  }
+]
